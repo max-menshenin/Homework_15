@@ -18,7 +18,8 @@
     };
 	```
 ```
-// Новый
+Новый
+
 function quickSort(fruits, left, right) {
 	var index;
 	if (parseInt(fruits.length) > 1) {
@@ -37,6 +38,7 @@ function quickSort(fruits, left, right) {
 ```
 # Исправил работу кнопки меньше
 Было
+```
 document.getElementById('btnLess').addEventListener('click', function () {
     if (gameRun){
         if (minValue === maxValue){
@@ -57,6 +59,7 @@ document.getElementById('btnLess').addEventListener('click', function () {
     }
 })
 ```
+
 Стало
 ```
 document.getElementById('btnLess').addEventListener('click', function () {
