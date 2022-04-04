@@ -1,4 +1,22 @@
 # Переписал ф-цию сортировки на более оптимальный вариант
+
+    // Прежний вариант
+    function quickSort(fruits, left, right) {
+      var index;
+      if (parseInt(fruits.length) > 1) {
+        left = typeof left != "number" ? 0 : left;
+        right = typeof right != "number" ? fruits.length - 1 : right;
+        index = partition(fruits, left, right);
+        if (left < index - 1) {
+          quickSort(fruits, left, index - 1);
+        }
+        if (index < right) {
+          quickSort(fruits, index, right);
+        }
+      }
+      return fruits;
+    };
+	```
 ```
 // Новый
 function quickSort(fruits, left, right) {
@@ -18,6 +36,28 @@ function quickSort(fruits, left, right) {
 };
 ```
 # Исправил работу кнопки меньше
+Было
+document.getElementById('btnLess').addEventListener('click', function () {
+    if (gameRun){
+        if (minValue === maxValue){
+            const phraseRandom = Math.round( Math.random());
+            const answerPhrase = (phraseRandom === 1) ?
+                `Вы загадали неправильное число!\n\u{1F914}` :
+                `Я сдаюсь..\n\u{1F92F}`;
+
+            answerField.innerText = answerPhrase;
+            gameRun = false;
+        } else {
+            maxValue = answerNumber - 1;
+            answerNumber  = Math.floor((minValue + maxValue) / 2);
+            orderNumber++;
+            orderNumberField.innerText = orderNumber;
+            answerField.innerText = `Вы загадали число ${answerNumber }?`;
+        }
+    }
+})
+```
+Стало
 ```
 document.getElementById('btnLess').addEventListener('click', function () {
 if (gameRun) {
