@@ -36,8 +36,8 @@ function quickSort(fruits, left, right) {
 	return fruits;
 };
 ```
-# Исправил работу кнопки меньше
-Было
+### Исправил работу кнопки меньше
+## Было
 ```
 document.getElementById('btnLess').addEventListener('click', function () {
     if (gameRun){
@@ -60,7 +60,7 @@ document.getElementById('btnLess').addEventListener('click', function () {
 })
 ```
 
-Стало
+## Стало
 ```
 document.getElementById('btnLess').addEventListener('click', function () {
 if (gameRun) {
