@@ -1,23 +1,22 @@
 # Переписал ф-цию сортировки на более оптимальный вариант
 # Прежний вариант
 
-  ```
-    function quickSort(fruits, left, right) {
-      var index;
-      if (parseInt(fruits.length) > 1) {
-        left = typeof left != "number" ? 0 : left;
-        right = typeof right != "number" ? fruits.length - 1 : right;
-        index = partition(fruits, left, right);
-        if (left < index - 1) {
-          quickSort(fruits, left, index - 1);
-        }
-        if (index < right) {
-          quickSort(fruits, index, right);
-        }
-      }
-      return fruits;
-    };
-	```
+```
+function quickSort(fruits, left, right) {
+var index;
+if (parseInt(fruits.length) > 1) {
+  left = typeof left != "number" ? 0 : left;
+  right = typeof right != "number" ? fruits.length - 1 : right;
+  index = partition(fruits, left, right);
+  if (left < index - 1) {
+    quickSort(fruits, left, index - 1);
+  }
+  if (index < right) {
+    quickSort(fruits, index, right);
+  }
+}
+return fruits;
+}; 
 ```
 # Новый
 ```
