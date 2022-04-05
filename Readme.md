@@ -1,5 +1,5 @@
 # Переписал ф-цию сортировки на более оптимальный вариант
-# Прежний вариант
+## Прежний вариант
 
 ```
 function quickSort(fruits, left, right) {
@@ -18,7 +18,7 @@ if (parseInt(fruits.length) > 1) {
 return fruits;
 }; 
 ```
-# Новый
+## Новый
 ```
 function quickSort(fruits, left, right) {
 	var index;
