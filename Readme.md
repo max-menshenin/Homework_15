@@ -1,6 +1,5 @@
 # Переписал ф-цию сортировки на более оптимальный вариант
 ## Прежний вариант
-
 ```
 function quickSort(fruits, left, right) {
 var index;
@@ -37,6 +36,7 @@ function quickSort(fruits, left, right) {
 };
 ```
 ### Исправил работу кнопки меньше
+
 ## Было
 ```
 document.getElementById('btnLess').addEventListener('click', function () {
