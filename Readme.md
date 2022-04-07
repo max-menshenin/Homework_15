@@ -1,5 +1,6 @@
 # Переписал ф-цию сортировки на более оптимальный вариант
 ## Прежний вариант
+
 ```
 function quickSort(fruits, left, right) {
 var index;
@@ -17,7 +18,9 @@ if (parseInt(fruits.length) > 1) {
 return fruits;
 }; 
 ```
+
 ## Новый
+
 ```
 function quickSort(fruits, left, right) {
 	var index;
@@ -61,6 +64,7 @@ document.getElementById('btnLess').addEventListener('click', function () {
 ```
 
 ## Стало
+
 ```
 document.getElementById('btnLess').addEventListener('click', function () {
 if (gameRun) {
