@@ -89,3 +89,11 @@ if (gameRun) {
 }
 })
 ```
+### Исправления верстки
+
+Добавлен alt у логотипа
+```
+<img src="img/laptop.png" alt="logo">
+```
+Убрано xmlns
+Добавлены id у section элементов
